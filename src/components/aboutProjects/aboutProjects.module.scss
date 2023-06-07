@@ -1,0 +1,109 @@
+.AboutProjectsBlock {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .AboutProjectsContainer {
+    padding: 100px 0 100px 0;
+    width: 80%;
+    display: flex;
+
+    .textContainer {
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: start;
+      position: relative;
+      padding: 76px 90px 0 0;
+
+      .backgroundTextTitle {
+        position: absolute;
+        left: -130px;
+        top: 55px;
+        color: rgba(138,138,138,0.1);
+        font-family: "Roboto", sans-serif;
+        font-size: 100px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 0.9em;
+        letter-spacing: 7.5px;
+      }
+
+      .textTitle {
+        margin: 0;
+        color: #2c2c2c;
+        font-family: "Tinos", sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 1.2em;
+      }
+
+      .textSecondContainerFirst {
+        margin: 31px 0 0 2px;
+      }
+
+      .textSecondContainerSecondary {
+        margin: 24px 0 21px 2px;
+      }
+
+      .textSecond {
+        margin: 0 0 1em;
+        color: #8a8a8a;
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.45em;
+        position: relative;
+        z-index: 1;
+      }
+
+      .read {
+        font-family: "Manuale", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: #2c2c2c;
+      }
+    }
+  }
+
+  .imgContainer {
+    width: 50%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    .img {
+      width: 470px;
+      height: 400px;
+      background: lightgreen;
+    }
+
+    .imgText {
+      text-align: right;
+      color: #2c2c2c;
+      font-family: "Manuale", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 16px 0 16px 0;
+      .imgTextColor {
+        color: #e34c38;
+      }
+    }
+  }
+  .backgroundElement {
+    position: absolute;
+    z-index: 0;
+    width: 55%;
+    background: #fbfbfb;
+    opacity: 0.9;
+    height: 65%;
+    top: 165px;
+    right: 30px;
+  }
+}
