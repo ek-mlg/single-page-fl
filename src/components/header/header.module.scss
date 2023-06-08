@@ -44,23 +44,25 @@
         font-weight: 400;
         text-transform: uppercase;
         color: #747070;
+        transition: color 0.3s ease 0.1s;
         position: relative;
 
         &::after{
-          background-color: #61dafb;
           content: "";
           display: block;
           height: 3px;
           position: absolute;
           left: 0;
           top: 10px;
-          transition: width .2s ease-in-out;
           width: 0;
+          transition: background-color 0.3s ease 0.1s, width 0.3s ease 0.2s;
         }
 
         &:hover {
           color: #343232;
+
           &::after{
+            background-color: #ffcc30;
             width: 100%;
           }
         }
@@ -70,14 +72,7 @@
         color: #343232;
 
         &::after{
-          background-color: #d25742;
-          content: "";
-          display: block;
-          height: 3px;
-          position: absolute;
-          left: 0;
-          top: 10px;
-          transition: width .2s ease-in-out;
+          background-color: #ce4d47;
           width: 100%;
         }
       }

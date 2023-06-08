@@ -1,0 +1,18 @@
+.footerBlock {
+  background: #0b0b0b;
+  display: flex;
+  justify-content: center;
+  .footerContainer {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    .footerText {
+      margin: 23px 0 20px 0;
+      color: #b8b8b8;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}
