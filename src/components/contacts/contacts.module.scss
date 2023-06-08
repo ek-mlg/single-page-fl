@@ -1,0 +1,61 @@
+.contactsBlock {
+  display: flex;
+  justify-content: center;
+  background: #101010;
+
+  .contactsContainer {
+    padding: 100px 0 100px 0;
+    width: 80%;
+    display: flex;
+
+    .textContainer {
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: start;
+      position: relative;
+
+      .backgroundTextTitle {
+        position: absolute;
+        left: -130px;
+        top: -20px;
+        color: rgba(138,138,138,0.1);
+        font-family: "Roboto", sans-serif;
+        font-size: 100px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 0.9em;
+        letter-spacing: 7.5px;
+      }
+
+      .textTitle {
+        margin: 0;
+        color: #d3d3d3;
+        font-family: "Tinos", sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 1.2em;
+      }
+
+      .textSecond {
+        margin: 31px 25px 1em 2px;
+        color: #b8b8b8;
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.45em;
+      }
+    }
+
+    .mapContainer {
+      padding: 0 0 0 70px;
+      .map {
+        height: 445px;
+        width: 565px;
+        background: deeppink;
+      }
+    }
+  }
+}

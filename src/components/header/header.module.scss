@@ -5,9 +5,14 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  background: white;
+  background: #fff;
   position: fixed;
   z-index: 100;
+  -webkit-box-shadow: 0 5px 10px -5px #e6e6e6;
+  -moz-box-shadow: 0 5px 10px -5px #e6e6e6;
+  box-shadow: 0 5px 10px -5px #e6e6e6;
+
+
 
   .headerSection {
     width: 80%;

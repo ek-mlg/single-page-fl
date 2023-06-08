@@ -1,7 +1,106 @@
 .AboutUsBlock {
- .AboutUsContainer {
-   padding: 100px 0 100px 0;
-   width: 80%;
-   background: #fbfbfb;
- }
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .AboutUsContainer {
+    padding: 100px 0 100px 0;
+    width: 80%;
+    display: flex;
+
+    .imgContainer {
+      width: 50%;
+      height: auto;
+      display: flex;
+      align-items: center;
+
+      .img {
+        height: 510px;
+        width: 520px;
+        background: lightgreen;
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    .textContainer {
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: start;
+      padding: 95px 0 0 11px;
+      position: relative;
+
+      .backgroundTextTitle {
+        position: absolute;
+        left: -50px;
+        top: 75px;
+        color: rgba(138, 138, 138, 0.1);
+        font-family: "Roboto", sans-serif;
+        font-size: 100px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 0.9em;
+        letter-spacing: 7.5px;
+      }
+
+      .textTitle {
+        color: #2c2c2c;
+        font-family: "Tinos", sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 1.2em;
+        margin: 0;
+      }
+
+      .textSecondContainer {
+        margin: 31px 0 0 3px;
+        padding: 0 90px 0 0;
+
+        .textSecond {
+          margin: 17px 0 17px 0;
+          color: #8a8a8a;
+          font-family: "Roboto", sans-serif;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 1.45em;
+        }
+      }
+
+      .selectedTextContainer {
+        margin: 42px 0px 0px 3px;
+        padding: 0% 24% 0% 4.5%;
+        border-style: solid;
+        border-width: 0px 0px 0px 2px;
+        border-color: #e34c38;
+        position: relative;
+        z-index: 1;
+
+        .selectedText {
+          margin: 0;
+          color: #5a5a5a;
+          font-family: "Roboto", sans-serif;
+          font-size: 22px;
+          font-weight: 300;
+          font-style: italic;
+          line-height: 1.54em;
+        }
+
+
+      }
+    }
+  }
+
+  .backgroundElement {
+    position: absolute;
+    z-index: 0;
+    width: 55%;
+    background: #fbfbfb;
+    opacity: 0.9;
+    height: 15%;
+    bottom: 145px;
+    right: 30px;
+  }
 }

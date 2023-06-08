@@ -1,0 +1,47 @@
+.catalogBlock {
+  display: flex;
+  justify-content: center;
+
+  .catalogContainer {
+    padding: 100px 0 100px 0;
+    width: 80%;
+
+    .textContainer {
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: start;
+      position: relative;
+      margin-bottom: 60px;
+
+      .backgroundTextTitle {
+        position: absolute;
+        left: -130px;
+        top: -20px;
+        color: rgba(138,138,138,0.1);
+        font-family: "Roboto", sans-serif;
+        font-size: 100px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 0.9em;
+        letter-spacing: 7.5px;
+      }
+      .textTitle {
+        margin: 0;
+        color: #2c2c2c;
+        font-family: "Tinos", sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 1.2em;
+      }
+    }
+
+    .photosContainer {
+      height: 100vh;
+      width: 100%;
+      background: #8a8a8a;
+    }
+  }
+}

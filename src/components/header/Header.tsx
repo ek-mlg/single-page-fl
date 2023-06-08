@@ -15,7 +15,7 @@ const Header = () => {
                         spy={true}
                         smooth={true}
                         hashSpy={true}
-                        offset={0}
+                        offset={-80}
                         duration={500}
                     >
                         Главная
@@ -27,14 +27,36 @@ const Header = () => {
                         spy={true}
                         smooth={true}
                         hashSpy={true}
-                        offset={0}
+                        offset={-80}
                         duration={500}
                     >
                         О нас
                     </Link>
+                    <Link
+                        className={s.link}
+                        activeClass={s.active}
+                        to="ourWorks"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={-80}
+                        duration={500}
+                    >
+                        Наши работы
+                    </Link>
                     <span className={s.link}>Каталог</span>
-                    <span className={s.link}>Наши работы</span>
-                    <span className={s.link}>Контакты</span>
+                    <Link
+                        className={s.link}
+                        activeClass={s.active}
+                        to="contacts"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={-80}
+                        duration={500}
+                    >
+                        Контакты
+                    </Link>
                 </nav>
             </div>
         </header>
