@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './mainPhoto.module.scss'
+import ReactTypingEffect from "react-typing-effect";
 
 const MainPhoto = () => {
     return (
@@ -7,7 +8,14 @@ const MainPhoto = () => {
             <div className={s.textContainer}>
                 <h1 className={s.textTitle}>Строительство</h1>
                 <h1 className={s.textTitle}>Беседеок</h1>
-                <h4 className={s.textSecond}>за один день, под ключ, с гарантией</h4>
+                <ReactTypingEffect
+                    className={s.textSecond}
+                    staticText={"В Москве и области -"}
+                    text={["за один день!", "под ключ!", "с гарантией!"]}
+                    speed={100}
+                    eraseDelay={5500}
+                    typingDelay={250}
+                />
             </div>
         </div>
     );

@@ -1,5 +1,8 @@
 import React from 'react';
 import s from './OurWorks.module.scss'
+import { Gallery } from "react-grid-gallery";
+import {images} from "../../projectsPhotos";
+
 const OurWorks = () => {
     return (
         <div className={s.catalogBlock} id={"ourWorks"}>
@@ -12,7 +15,7 @@ const OurWorks = () => {
                 </div>
 
                 <div className={s.photosContainer}>
-
+                    <Gallery images={images} rowHeight={320} enableImageSelection={false} />
                 </div>
             </div>
         </div>

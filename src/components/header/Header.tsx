@@ -44,7 +44,18 @@ const Header = () => {
                     >
                         Наши работы
                     </Link>
-                    <span className={s.link}>Каталог</span>
+                    <Link
+                        className={s.link}
+                        activeClass={s.active}
+                        to="catalog"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={-80}
+                        duration={500}
+                    >
+                        Каталог
+                    </Link>
                     <Link
                         className={s.link}
                         activeClass={s.active}

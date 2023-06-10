@@ -7,15 +7,21 @@ import AboutUs from "./components/aboutUs/AboutUs";
 import OurWorks from "./components/ourWorks/OurWorks";
 import Contacts from "./components/contacts/Contacts";
 import Footer from "./components/footer/Footer";
+import Advantages from "./components/advantages/Advantages";
+import Catalog from "./components/catalog/Catalog";
 
 function App() {
     return (
         <div className="App">
             <Header/>
             <MainPhoto/>
-            <AboutProjects/>
-            <AboutUs/>
+            <div id={"aboutProjects"}>
+                <AboutProjects/>
+                <AboutUs/>
+            </div>
             <OurWorks/>
+            <Advantages/>
+            <Catalog/>
             <Contacts/>
             <Footer/>
         </div>

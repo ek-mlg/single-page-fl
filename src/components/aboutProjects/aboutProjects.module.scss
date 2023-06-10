@@ -22,7 +22,7 @@
         position: absolute;
         left: -130px;
         top: 55px;
-        color: rgba(138,138,138,0.1);
+        color: rgba(138, 138, 138, 0.1);
         font-family: "Roboto", sans-serif;
         font-size: 100px;
         font-weight: 700;
@@ -59,51 +59,85 @@
         z-index: 1;
       }
 
-      .read {
+      .link {
+        width: 120px;
+        position: relative;
+        display: inline-block;
+        color: #2c2c2c;
+        overflow: hidden;
         font-family: "Tinos", sans-serif;
         font-size: 18px;
         font-weight: 700;
+        cursor: pointer;
+        .read {
+          position: absolute;
+          top: 0;
+          left: 0;
+          overflow: hidden;
+          transform: translateX(-100%);
+          transition: transform 275ms ease;
+
+          &::before {
+            display: inline-block;
+            content: attr(data-content);
+            color: #ce4d47;
+            transform: translateX(100%);
+            transition: transform 275ms ease;
+            text-decoration: underline;
+          }
+        }
+
+        &:hover {
+          .read {
+            transform: translateX(0);
+            &::before {
+              transform: translateX(0);
+            }
+          }
+        }
+      }
+    }
+
+
+    .imgContainer {
+      width: 50%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+
+      .img {
+        width: 470px;
+        height: 400px;
+        background: lightgreen;
+      }
+
+      .imgText {
+        text-align: right;
         color: #2c2c2c;
+        font-family: "Tinos", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 16px 0 16px 0;
+
+        .imgTextColor {
+          color: #ce4d47;
+        }
       }
     }
-  }
 
-  .imgContainer {
-    width: 50%;
-    height: auto;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-
-    .img {
-      width: 470px;
-      height: 400px;
-      background: lightgreen;
+    .backgroundElement {
+      position: absolute;
+      z-index: 0;
+      width: 55%;
+      background: #fbfbfb;
+      opacity: 0.9;
+      height: 65%;
+      top: 165px;
+      right: 30px;
     }
-
-    .imgText {
-      text-align: right;
-      color: #2c2c2c;
-      font-family: "Tinos", sans-serif;
-      font-size: 16px;
-      font-weight: 500;
-      margin: 16px 0 16px 0;
-      .imgTextColor {
-        color: #ce4d47;
-      }
-    }
-  }
-  .backgroundElement {
-    position: absolute;
-    z-index: 0;
-    width: 55%;
-    background: #fbfbfb;
-    opacity: 0.9;
-    height: 65%;
-    top: 165px;
-    right: 30px;
   }
 }
