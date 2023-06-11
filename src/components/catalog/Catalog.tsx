@@ -1,5 +1,7 @@
 import React from 'react';
 import s from './catalog.module.scss'
+import Project from "./project/Project";
+import {projectContent} from "../../data";
 
 const Catalog = () => {
     return (
@@ -11,16 +13,16 @@ const Catalog = () => {
                     <h2 className={s.textTitle}>Sunny Terraces</h2>
                 </div>
                 <div className={s.catalog}>
-                    <div className={s.project}></div>
-                    <div className={s.project}></div>
-                    <div className={s.project}></div>
-                    <div className={s.project}></div>
-                    <div className={s.project}></div>
-                    <div className={s.project}></div>
-                    <div className={s.project}></div>
-                    <div className={s.project}></div>
-                    <div className={s.project}></div>
-                    <div className={s.project}></div>
+                    {projectContent.map(el => (<Project
+                        key={el.id}
+                        img={el.img}
+                        alt={el.alt}
+                        title={el.title}
+                        description={el.description}
+                        square={el.square}
+                        size={el.size}
+                        price={el.price}
+                    />))}
                 </div>
             </div>
         </div>
