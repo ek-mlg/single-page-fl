@@ -7,7 +7,7 @@ const AboutProjects = () => {
         <div className={s.AboutProjectsBlock}>
             <div className={s.AboutProjectsContainer}>
                 <div className={s.textContainer}>
-                    <span className={s.backgroundTextTitle}>Welcome</span>
+                    <span className={s.backgroundTextTitle}>Проекты</span>
                     <h2 className={s.textTitle}>Architecture</h2>
                     <h2 className={s.textTitle}>with people in mind.</h2>
                     <div className={s.textSecondContainerFirst}>

@@ -8,7 +8,7 @@ const Advantages = () => {
         <div className={s.advantagesBlock}>
             <div className={s.advantagesContainer}>
                 <div className={s.textContainer}>
-                    <span className={s.backgroundTextTitle}>Advantages</span>
+                    <span className={s.backgroundTextTitle}>Преимущества</span>
                     <h2 className={s.textTitle}>Fabulous Mansion in enchanting</h2>
                     <h2 className={s.textTitle}>area with great advantages</h2>
                 </div>

@@ -9,7 +9,7 @@ const AboutUs = () => {
                     <img className={s.img}/>
                 </div>
                 <div className={s.textContainer}>
-                    <span className={s.backgroundTextTitle}>About</span>
+                    <span className={s.backgroundTextTitle}>О нас</span>
                     <h2 className={s.textTitle}>Everything you dreamed</h2>
                     <h2 className={s.textTitle}>of in one gorgeous house!</h2>
                     <div className={s.textSecondContainer}>

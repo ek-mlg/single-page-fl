@@ -8,7 +8,7 @@ const Catalog = () => {
         <div className={s.catalogBlock} id={"catalog"}>
             <div className={s.catalogContainer}>
                 <div className={s.textContainer}>
-                    <span className={s.backgroundTextTitle}>Catalog</span>
+                    <span className={s.backgroundTextTitle}>Каталог</span>
                     <h2 className={s.textTitle}>Magnificent View and</h2>
                     <h2 className={s.textTitle}>Sunny Terraces</h2>
                 </div>

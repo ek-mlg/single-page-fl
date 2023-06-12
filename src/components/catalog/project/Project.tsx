@@ -24,18 +24,18 @@ const Project:React.FC<ProjectPropsType> = ({img, alt, title, description, squar
             <div className={s.characteristicsContainer}>
                 <div className={s.characteristics}>
                     <img src={squareIcon} alt={'Площадь'} className={s.characteristicsImg}/>
-                    <p className={s.characteristicsTitle}>Square:</p>
-                    <p className={s.characteristicsDescription}>{square}</p>
+                    <p className={s.characteristicsTitle}>Площадь:</p>
+                    <p className={s.characteristicsDescription}>{square} м²</p>
                 </div>
                 <div className={s.characteristics}>
                     <img src={sizeIcon} alt={'Размеры'} className={s.characteristicsImg}/>
-                    <p className={s.characteristicsTitle}>Size:</p>
-                    <p className={s.characteristicsDescription}>{size}</p>
+                    <p className={s.characteristicsTitle}>Размеры:</p>
+                    <p className={s.characteristicsDescription}>{size} м</p>
                 </div>
                 <div className={s.characteristics}>
                     <img src={priceIcon} alt={'Цена'} className={s.characteristicsImg}/>
-                    <p className={s.characteristicsTitle}>Price:</p>
-                    <p className={s.characteristicsDescription}>{price}</p>
+                    <p className={s.characteristicsTitle}>Цена от:</p>
+                    <p className={s.characteristicsDescription}>{price} 000 ₽</p>
                 </div>
 
             </div>
