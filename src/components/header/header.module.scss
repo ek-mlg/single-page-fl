@@ -21,9 +21,26 @@
     align-items: center;
     justify-content: space-between;
 
-    .logo {
+    .locoContainer {
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .logo {
+        height: 70%;
+      }
+      .text {
+        margin: 0;
+        font-family: "Tinos", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        .textSecond {
+          color: #ce4d47;
+        }
+      }
     }
+
 
     .nav {
       height: 100%;

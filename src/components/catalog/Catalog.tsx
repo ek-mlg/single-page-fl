@@ -9,8 +9,8 @@ const Catalog = () => {
             <div className={s.catalogContainer}>
                 <div className={s.textContainer}>
                     <span className={s.backgroundTextTitle}>Каталог</span>
-                    <h2 className={s.textTitle}>Magnificent View and</h2>
-                    <h2 className={s.textTitle}>Sunny Terraces</h2>
+                    <h2 className={s.textTitle}>Проекты садовых</h2>
+                    <h2 className={s.textTitle}>беседок</h2>
                 </div>
                 <div className={s.catalog}>
                     {projectContent.map(el => (<Project
@@ -22,6 +22,7 @@ const Catalog = () => {
                         square={el.square}
                         size={el.size}
                         price={el.price}
+                        priceSecond={el.priceSecond}
                     />))}
                 </div>
             </div>

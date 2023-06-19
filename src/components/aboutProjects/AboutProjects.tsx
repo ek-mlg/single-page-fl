@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './aboutProjects.module.scss'
 import {Link} from "react-scroll";
+import project from '../../assets/catalogPhotos/project3.jpg'
 
 const AboutProjects = () => {
     return (
@@ -8,17 +9,15 @@ const AboutProjects = () => {
             <div className={s.AboutProjectsContainer}>
                 <div className={s.textContainer}>
                     <span className={s.backgroundTextTitle}>Проекты</span>
-                    <h2 className={s.textTitle}>Architecture</h2>
-                    <h2 className={s.textTitle}>with people in mind.</h2>
+                    <h2 className={s.textTitle}>Ваш комфорт</h2>
+                    <h2 className={s.textTitle}>– наш главный приоритет.</h2>
                     <div className={s.textSecondContainerFirst}>
-                        <p className={s.textSecond}>Surrounded by greenery, the villa opens directly onto a sunny
-                            terrace with a fabulous heated outdoor swimming pool. The property is set in 2500m² of
-                            grounds with a delightful variety of flowers and trees.</p>
+                        <p className={s.textSecond}>Предлогаем Вашему внимаю ассортимент проектов, которые подходят для любых потребностей. Используем только лучшие материалы:
+                            профилированная доска 135х45 мм., мини брус 135х60 мм., клееный брус 135х75 мм.</p>
                     </div>
                     <div className={s.textSecondContainerSecondary}>
-                        <p className={s.textSecond}>Equipped with a top-of-the-range alarm system, the villa has
-                            electric gates and private parking for up to 10 vehicles within the grounds. Ideal for use
-                            as a luxury family residence.</p>
+                        <p className={s.textSecond}>Гарантируем качество и надежность всех наших проектов.</p>
+
                     </div>
                     <Link
                         className={s.link}
@@ -37,8 +36,8 @@ const AboutProjects = () => {
                 </div>
 
                 <div className={s.imgContainer}>
-                    <img className={s.img}/>
-                    <p className={s.imgText}>Sunny Terrace – <span className={s.imgTextColor}>Homeswort</span></p>
+                    <img className={s.img} alt={'Пример проекта'} src={project}/>
+                    <p className={s.imgText}>Пример проекта – <span className={s.imgTextColor}>Беседка №1</span></p>
                 </div>
                 <div className={s.backgroundElement}></div>
             </div>

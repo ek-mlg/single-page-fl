@@ -12,19 +12,23 @@ import Catalog from "./components/catalog/Catalog";
 
 function App() {
     return (
-        <div className="App">
+        <>
             <Header/>
+
             <MainPhoto/>
             <div id={"aboutProjects"}>
                 <AboutProjects/>
                 <AboutUs/>
             </div>
-            <OurWorks/>
-            <Advantages/>
+            <div id={"ourWorks"}>
+                <OurWorks/>
+                <Advantages/>
+            </div>
             <Catalog/>
             <Contacts/>
+
             <Footer/>
-        </div>
+        </>
     );
 }
 

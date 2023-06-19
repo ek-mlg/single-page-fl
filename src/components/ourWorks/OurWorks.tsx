@@ -5,13 +5,12 @@ import {images} from "../../projectsPhotos";
 
 const OurWorks = () => {
     return (
-        <div className={s.catalogBlock} id={"ourWorks"}>
+        <div className={s.catalogBlock}>
             <div className={s.catalogContainer}>
                 <div className={s.textContainer}>
                     <span className={s.backgroundTextTitle}>Больше фото</span>
-                    <h2 className={s.textTitle}>Villa interior and exterior is</h2>
-                    <h2 className={s.textTitle}>perfectly coupled with</h2>
-                    <h2 className={s.textTitle}>wild nature and the sea</h2>
+                    <h2 className={s.textTitle}>Предлагаем ознакомиться</h2>
+                    <h2 className={s.textTitle}>с нашими реальными проектами</h2>
                 </div>
 
                 <div className={s.photosContainer}>

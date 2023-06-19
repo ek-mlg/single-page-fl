@@ -11,10 +11,11 @@ type ProjectPropsType = {
     description: string,
     square: number,
     size: string,
-    price: number
+    price: number,
+    priceSecond : string | undefined
 }
 
-const Project:React.FC<ProjectPropsType> = ({img, alt, title, description, square, size, price}) => {
+const Project:React.FC<ProjectPropsType> = ({img, alt, title, description, square, size, price, priceSecond}) => {
 
     return (
         <div className={s.projectContainer}>
@@ -35,7 +36,7 @@ const Project:React.FC<ProjectPropsType> = ({img, alt, title, description, squar
                 <div className={s.characteristics}>
                     <img src={priceIcon} alt={'Цена'} className={s.characteristicsImg}/>
                     <p className={s.characteristicsTitle}>Цена от:</p>
-                    <p className={s.characteristicsDescription}>{price} 000 ₽</p>
+                    <p className={s.characteristicsDescription}>{price} <span>{priceSecond} ₽</span></p>
                 </div>
 
             </div>

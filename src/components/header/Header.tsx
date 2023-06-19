@@ -1,12 +1,17 @@
 import React from 'react';
 import s from './header.module.scss'
 import {Link} from "react-scroll";
+import logo from '../../assets/characteristicsSVG/logo.png'
 
 const Header = () => {
     return (
         <header className={s.headerContainer}>
             <div className={s.headerSection}>
-                <img alt={"Логотип"} className={s.logo}/>
+                <div className={s.locoContainer}>
+                    <img alt={"Логотип"} className={s.logo} src={logo}/>
+                        <p className={s.text}>Дачные <span className={s.textSecond}>Беседки</span></p>
+                </div>
+
                 <nav className={s.nav}>
                     <Link
                         className={s.link}
