@@ -3,7 +3,7 @@ import s from './header.module.scss'
 import {Link} from "react-scroll";
 import logo from '../../assets/characteristicsSVG/logo.png'
 import {useWindowSize} from "../../useWindowSize";
-import DesktopLinks from "./desktopLinks/DesktopLinks";
+import Links from './links/Links';
 import Burger from "./burger/Burger";
 
 const Header = () => {
@@ -28,7 +28,7 @@ const Header = () => {
                 </Link>
                 {size > 1340
                     ?
-                    <DesktopLinks/>
+                    <Links/>
                     :
                     <Burger/>
                 }

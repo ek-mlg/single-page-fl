@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import s from './burger.module.scss'
+import Links from "../links/Links";
+
 
 const Burger = () => {
 
@@ -21,7 +23,7 @@ const Burger = () => {
             </div>
 
             <div className={open ? `${s.BurgerNavItems} ${s.Show}` : s.BurgerNavItems}>
-
+                <Links onClickHandler={onClickHandler}/>
             </div>
             <div className={open ? `${s.Background} ${s.BackgroundShow}` : s.Background}>
             </div>

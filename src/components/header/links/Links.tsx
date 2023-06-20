@@ -2,10 +2,15 @@ import React from 'react';
 import s from './desktopLinks.module.scss';
 import {Link} from "react-scroll";
 
-const DesktopLinks = () => {
+type LinksProps = {
+    onClickHandler?: ()=> void
+}
+
+const Links:React.FC<LinksProps> = ({onClickHandler}) => {
     return (
         <nav className={s.nav}>
             <Link
+                onClick={onClickHandler}
                 className={s.link}
                 activeClass={s.active}
                 to="main"
@@ -18,6 +23,7 @@ const DesktopLinks = () => {
                 Главная
             </Link>
             <Link
+                onClick={onClickHandler}
                 className={s.link}
                 activeClass={s.active}
                 to="aboutProjects"
@@ -30,6 +36,7 @@ const DesktopLinks = () => {
                 О нас
             </Link>
             <Link
+                onClick={onClickHandler}
                 className={s.link}
                 activeClass={s.active}
                 to="ourWorks"
@@ -42,6 +49,7 @@ const DesktopLinks = () => {
                 Наши работы
             </Link>
             <Link
+                onClick={onClickHandler}
                 className={s.link}
                 activeClass={s.active}
                 to="catalog"
@@ -54,6 +62,7 @@ const DesktopLinks = () => {
                 Каталог
             </Link>
             <Link
+                onClick={onClickHandler}
                 className={s.link}
                 activeClass={s.active}
                 to="contacts"
@@ -69,4 +78,4 @@ const DesktopLinks = () => {
     );
 };
 
-export default DesktopLinks;
+export default Links;
