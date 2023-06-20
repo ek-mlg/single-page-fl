@@ -3,6 +3,8 @@ import s from './aboutUs.module.scss'
 import aboutImage from '../../assets/projectsPhotos/image9.jpeg'
 
 const AboutUs = () => {
+
+
     return (
         <div className={s.AboutUsBlock} id={"aboutProjects"}>
             <div className={s.AboutUsContainer}>
@@ -19,7 +21,7 @@ const AboutUs = () => {
                     </div>
 
                     <div className={s.selectedTextContainer}>
-                        <p className={s.selectedText}>“ Мы оссуществляем строительство садовых беседок с 2015 года.</p>
+                        <p className={s.selectedText}>“ Мы оссуществляем строительство беседок с 2015 года.</p>
 
                     </div>
                 </div>

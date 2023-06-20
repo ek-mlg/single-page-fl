@@ -2,78 +2,36 @@ import React from 'react';
 import s from './header.module.scss'
 import {Link} from "react-scroll";
 import logo from '../../assets/characteristicsSVG/logo.png'
+import {useWindowSize} from "../../useWindowSize";
+import DesktopLinks from "./desktopLinks/DesktopLinks";
+import Burger from "./burger/Burger";
 
 const Header = () => {
+
+    const size = useWindowSize()
+
     return (
         <header className={s.headerContainer}>
             <div className={s.headerSection}>
-                <div className={s.locoContainer}>
+                <Link
+                    className={s.locoContainer}
+                    activeClass={s.active}
+                    to="main"
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={-80}
+                    duration={500}
+                >
                     <img alt={"Логотип"} className={s.logo} src={logo}/>
-                        <p className={s.text}>Дачные <span className={s.textSecond}>Беседки</span></p>
-                </div>
-
-                <nav className={s.nav}>
-                    <Link
-                        className={s.link}
-                        activeClass={s.active}
-                        to="main"
-                        spy={true}
-                        smooth={true}
-                        hashSpy={true}
-                        offset={-80}
-                        duration={500}
-                    >
-                        Главная
-                    </Link>
-                    <Link
-                        className={s.link}
-                        activeClass={s.active}
-                        to="aboutProjects"
-                        spy={true}
-                        smooth={true}
-                        hashSpy={true}
-                        offset={-80}
-                        duration={500}
-                    >
-                        О нас
-                    </Link>
-                    <Link
-                        className={s.link}
-                        activeClass={s.active}
-                        to="ourWorks"
-                        spy={true}
-                        smooth={true}
-                        hashSpy={true}
-                        offset={-80}
-                        duration={500}
-                    >
-                        Наши работы
-                    </Link>
-                    <Link
-                        className={s.link}
-                        activeClass={s.active}
-                        to="catalog"
-                        spy={true}
-                        smooth={true}
-                        hashSpy={true}
-                        offset={-80}
-                        duration={500}
-                    >
-                        Каталог
-                    </Link>
-                    <Link
-                        className={s.link}
-                        activeClass={s.active}
-                        to="contacts"
-                        spy={true}
-                        smooth={true}
-                        hashSpy={true}
-                        offset={-80}
-                        duration={500}
-                    >
-                        Контакты
-                    </Link>
-                </nav>
+                    <p className={s.text}>Дачные <span className={s.textSecond}>Беседки</span></p>
+                </Link>
+                {size > 1340
+                    ?
+                    <DesktopLinks/>
+                    :
+                    <Burger/>
+                }
             </div>
         </header>
     );

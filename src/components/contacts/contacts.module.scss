@@ -8,6 +8,7 @@
     height: auto;
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
 
     .textContainer {
       width: 50%;
@@ -22,13 +23,18 @@
         position: absolute;
         left: -130px;
         top: -20px;
-        color: rgba(138,138,138,0.1);
+        color: rgba(138, 138, 138, 0.1);
         font-family: "Roboto", sans-serif;
         font-size: 100px;
         font-weight: 700;
         text-transform: uppercase;
         line-height: 0.9em;
         letter-spacing: 7.5px;
+        @media (max-width: 1040px) {
+          left: 0;
+          top: -30px;
+          font-size: 26px;
+        }
       }
 
       .textTitle {
@@ -38,6 +44,9 @@
         font-size: 42px;
         font-weight: 600;
         line-height: 1.2em;
+        @media (max-width: 1040px) {
+          font-size: 36px;
+        }
       }
 
       .textSecond {
@@ -64,10 +73,35 @@
           text-decoration: none;
         }
       }
+      @media (max-width: 1040px) {
+        width: 100%;
+      }
     }
 
     .mapContainer {
       padding: 0 0 0 70px;
+
+      .map {
+        width: 515px;
+        height: 445px;
+      }
+
+      @media (max-width: 1040px) {
+        margin-top: 40px;
+        padding: 0;
+        .map {
+          width: 100%;
+          height: 400px;
+        }
+      }
+      @media (max-width: 1040px) {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 1040px) {
+      width: 95%;
+      padding-bottom: 100px;
     }
   }
 }

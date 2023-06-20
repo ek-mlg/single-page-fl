@@ -27,5 +27,11 @@
     font-weight: 400;
     line-height: 1.45em;
     text-align: start;
+    @media (max-width: 1040px) {
+      text-align: center;
+    }
+  }
+  @media (max-width: 1040px) {
+    align-items: center;
   }
 }

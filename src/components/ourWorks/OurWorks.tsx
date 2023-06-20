@@ -10,7 +10,7 @@ const OurWorks = () => {
                 <div className={s.textContainer}>
                     <span className={s.backgroundTextTitle}>Больше фото</span>
                     <h2 className={s.textTitle}>Предлагаем ознакомиться</h2>
-                    <h2 className={s.textTitle}>с нашими реальными проектами</h2>
+                    <h2 className={s.textTitle}>с нашими проектами</h2>
                 </div>
 
                 <div className={s.photosContainer}>

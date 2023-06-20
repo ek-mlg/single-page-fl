@@ -29,6 +29,11 @@
         text-transform: uppercase;
         line-height: 0.9em;
         letter-spacing: 7.5px;
+        @media (max-width: 1040px) {
+          left: 0;
+          top: -30px;
+          font-size: 26px;
+        }
       }
 
       .textTitle {
@@ -38,6 +43,10 @@
         font-size: 42px;
         font-weight: 600;
         line-height: 1.2em;
+
+        @media (max-width: 1040px) {
+          font-size: 36px
+        }
       }
 
       .textSecondContainerFirst {
@@ -96,6 +105,11 @@
           }
         }
       }
+
+      @media (max-width: 1040px) {
+        width: 100%;
+        padding: 0;
+      }
     }
 
 
@@ -114,6 +128,11 @@
         height: 400px;
         background: lightgreen;
         object-fit: cover;
+
+        @media (max-width: 1040px) {
+          height: 370px;
+          width: 100%;
+        }
       }
 
       .imgText {
@@ -128,6 +147,12 @@
           color: #ce4d47;
         }
       }
+
+      @media (max-width: 1040px) {
+        margin-top: 50px;
+        width: 100%;
+        align-items: flex-end;
+      }
     }
 
     .backgroundElement {
@@ -139,6 +164,17 @@
       height: 65%;
       top: 165px;
       right: 30px;
+      @media (max-width: 1040px) {
+        width: 95%;
+        right: 2.5%;
+        top: 56%;
+      }
+    }
+
+    @media (max-width: 1040px) {
+      flex-wrap: wrap;
+      width: 95%;
+      padding-bottom: 0;
     }
   }
 }

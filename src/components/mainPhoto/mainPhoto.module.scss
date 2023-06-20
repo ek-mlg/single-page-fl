@@ -25,6 +25,9 @@
       font-size: 86px;
       font-weight: 500;
       line-height: 0.96em;
+      @media (max-width: 1040px) {
+        font-size: 45px;
+      }
 
     }
 
@@ -36,6 +39,12 @@
       font-style: italic;
       letter-spacing: 0.65px;
       font-size: 26px;
+      @media (max-width: 1040px) {
+        font-size: 18px;
+      }
     }
+  }
+  @media (max-width: 1040px) {
+    background-position: 70%;
   }
 }

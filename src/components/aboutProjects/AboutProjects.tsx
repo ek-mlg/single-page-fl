@@ -10,7 +10,7 @@ const AboutProjects = () => {
                 <div className={s.textContainer}>
                     <span className={s.backgroundTextTitle}>Проекты</span>
                     <h2 className={s.textTitle}>Ваш комфорт</h2>
-                    <h2 className={s.textTitle}>– наш главный приоритет.</h2>
+                    <h2 className={s.textTitle}>– наш главный приоритет</h2>
                     <div className={s.textSecondContainerFirst}>
                         <p className={s.textSecond}>Предлогаем Вашему внимаю ассортимент проектов, которые подходят для любых потребностей. Используем только лучшие материалы:
                             профилированная доска 135х45 мм., мини брус 135х60 мм., клееный брус 135х75 мм.</p>

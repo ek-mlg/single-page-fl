@@ -20,6 +20,16 @@
         background: lightgreen;
         position: relative;
         z-index: 1;
+        object-fit: cover;
+
+        @media (max-width: 1040px) {
+          height: 370px;
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 1040px) {
+        width: 100%;
       }
     }
 
@@ -44,6 +54,11 @@
         text-transform: uppercase;
         line-height: 0.9em;
         letter-spacing: 7.5px;
+        @media (max-width: 1040px) {
+          left: 0;
+          top: 70px;
+          font-size: 26px;
+        }
       }
 
       .textTitle {
@@ -53,6 +68,9 @@
         font-weight: 600;
         line-height: 1.2em;
         margin: 0;
+        @media (max-width: 1040px) {
+          font-size: 36px
+        }
       }
 
       .textSecondContainer {
@@ -66,6 +84,10 @@
           font-size: 17px;
           font-weight: 400;
           line-height: 1.45em;
+        }
+
+        @media (max-width: 1040px) {
+          padding: 0
         }
       }
 
@@ -88,8 +110,21 @@
           line-height: 1.54em;
         }
 
-
+        @media (max-width: 1040px) {
+          padding-right: 0;
+        }
       }
+
+      @media (max-width: 1040px) {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+
+    @media (max-width: 1040px) {
+      flex-wrap: wrap;
+      width: 95%;
+      padding-bottom: 0;
     }
   }
 
@@ -102,5 +137,12 @@
     height: 15%;
     bottom: 80px;
     right: 30px;
+
+    @media (max-width: 1040px) {
+      bottom: 40px;
+      height: 12%;
+      right: 5%;
+      width: 89%;
+    }
   }
 }

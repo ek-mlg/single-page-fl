@@ -1,0 +1,52 @@
+.nav {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .link {
+    padding: 8px;
+    margin: 0 10px 0 10px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #747070;
+    transition: color 0.3s ease 0.1s;
+    position: relative;
+
+    &::after{
+      content: "";
+      display: block;
+      height: 3px;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 0;
+      transition: background-color 0.3s ease 0.1s, width 0.3s ease 0.2s;
+    }
+
+    &:hover {
+      color: #343232;
+
+      &::after{
+        background-color: #ffcc30;
+        width: 100%;
+      }
+    }
+
+  }
+  .active {
+    color: #343232;
+
+    &::after{
+      background-color: #ce4d47;
+      width: 100%;
+    }
+  }
+}
