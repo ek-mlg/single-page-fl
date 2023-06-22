@@ -15,9 +15,8 @@
       align-items: center;
 
       .img {
-        height: 510px;
-        width: 520px;
-        background: lightgreen;
+        height: 420px;
+        width: 440px;
         position: relative;
         z-index: 1;
         object-fit: cover;
@@ -25,6 +24,7 @@
         @media (max-width: 1040px) {
           height: 370px;
           width: 100%;
+          object-fit: contain;
         }
       }
 
@@ -58,6 +58,7 @@
           left: 0;
           top: 70px;
           font-size: 26px;
+          color: rgba(138, 138, 138, 0.7);
         }
       }
 
@@ -135,12 +136,12 @@
     background: #fbfbfb;
     opacity: 0.9;
     height: 15%;
-    bottom: 80px;
+    bottom: 40px;
     right: 30px;
 
     @media (max-width: 1040px) {
-      bottom: 40px;
-      height: 12%;
+      bottom: 0;
+      height: 10%;
       right: 5%;
       width: 89%;
     }
